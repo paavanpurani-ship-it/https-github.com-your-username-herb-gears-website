@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Herb Gears for Mayor</title>
+    <meta name="description" content="Join the team! Volunteer to help elect Herb Gears as the next Mayor of Irving.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-navy);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-item input {
+            width: 20px;
+            height: 20px;
+        }
+
+        .volunteer-hero {
+            background: linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.8)), url('assets/images/volunteers.png');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+
+        @media(max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">HERB GEARS <span>★ MAYOR</span></a>
+
+            <div class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="issues.html" class="nav-link">Issues</a>
+                <a href="volunteer.html" class="nav-link active">Get Involved</a>
+                <a href="donate.html" class="nav-btn btn btn-primary">Donate</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="volunteer-hero">
+        <div class="container">
+            <h1>Join Team Herb</h1>
+            <p>Together, we can build a better Irving.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-container">
+                <h3 class="text-center" style="margin-bottom: 30px;">I want to help!</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">I'm interested in (check all that apply):</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="canvassing"> Block Walking
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="phonebank"> Phone Banking
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="events"> Hosting an Event
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="signs"> Yard Sign
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="data"> Data Entry
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interest" value="other"> Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message (Optional)</label>
+                        <textarea id="message" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 20px;">
+                <h4>Herb Gears for Mayor</h4>
+                <div class="disclaimer-box">Pol. Adv. Paid for by Herb Gears Campaign</div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Herb Gears Campaign. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

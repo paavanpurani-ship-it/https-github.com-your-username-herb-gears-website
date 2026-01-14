@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Herb Gears for Mayor</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .event-item {
+            display: flex;
+            background: white;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .event-date {
+            background: var(--color-navy);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .event-details {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .date-month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .date-day {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        @media(max-width: 600px) {
+            .event-item {
+                flex-direction: column;
+            }
+
+            .event-date {
+                padding: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .event-date span {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">HERB GEARS <span>★ MAYOR</span></a>
+            <div class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="volunteer.html" class="nav-link">Get Involved</a>
+                <a href="donate.html" class="nav-btn btn btn-primary">Donate</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="section">
+        <div class="container">
+            <h1 class="text-center" style="margin-bottom: 50px;">Upcoming Events</h1>
+
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-month">FEB</span>
+                    <span class="date-day">14</span>
+                </div>
+                <div class="event-details">
+                    <h3>Campaign Kickoff Rally</h3>
+                    <p class="text-text-light">📍 Downtown Heritage Park | 🕕 6:00 PM</p>
+                    <p>Join Herb and the team for the official kickoff of our campaign! Music, food, and speeches.</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 10px; padding: 8px 16px; font-size: 0.9rem;">RSVP Now</a>
+                </div>
+            </div>
+
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-month">FEB</span>
+                    <span class="date-day">21</span>
+                </div>
+                <div class="event-details">
+                    <h3>Coffee with Herb</h3>
+                    <p class="text-text-light">📍 Sunny Side Cafe | ☕ 9:00 AM</p>
+                    <p>Have a cup of coffee and share your thoughts on the future of Irving with Herb.</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 10px; padding: 8px 16px; font-size: 0.9rem;">RSVP Now</a>
+                </div>
+            </div>
+
+            <p class="text-center" style="margin-top: 40px; color: grey;">More events coming soon.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Herb Gears Campaign</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
